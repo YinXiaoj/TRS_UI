@@ -1,0 +1,125 @@
+/*图片统一路径*/
+@url:"../images"; 
+
+/*文字超出*/
+@ellipsis:{ white-space:nowrap; text-overflow:ellipsis; overflow:hidden;} 
+
+/*盒模型*/
+@box-sizing:{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+
+/*隐藏元素，用于可访问的元素*/
+@invisible:{ position: absolute; opacity: 0; width: 1px; height: 1px;} 
+
+/*链接无下划线，hover后有下划线*/
+@hover-link:{ 
+    text-decoration: none;
+    &:hover { text-decoration: underline;}
+}
+
+/*边框颜色*/
+@borderColor:#ebebeb;
+
+/*文字active颜色*/
+@colorActive:{color: #3d55a7;}
+
+/*灰色*/
+@colorGrey:{color:#999;}
+
+/*清除浮动*/
+.clearfix() {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+}
+/*input文字占位符的颜色*/
+.placeholder(@c:#999){ 
+    ::-webkit-input-placeholder {color:@c;}
+    :-moz-placeholder{color:@c;}
+    ::-moz-placeholder{color:@c;}
+    :-ms-input-placeholder{color:@c;} 
+}
+/*设置透明度*/
+.opacity(@num){ 
+    opacity: @num/100;
+    filter: alpha(opacity=@num);
+}
+/*盒子宽高*/
+.size(@w,@h){ 
+    width: @w; height: @h;
+}
+.square(@size) {
+    .size(@size; @size);
+}
+
+/*弹出框*/  
+.popup(@bg:rgba(0,0,0,0.5),@className,@w,@h){  
+     background: @bg;
+    .position(fixed);
+    @name: ~'@{className}';
+    .@{name}{ .position_center(absolute,@w,@h); background: #fff;}
+}
+/*图片遮罩层*/
+.shade(@bg:rgba(0,0,0,0.5)){
+    position: absolute; width: 100%; background:@bg; bottom: 0; left: 0; padding: 0;
+}
+
+/*三角形*/
+.triangle(top,@w,@c){ 
+    border-style: solid;border-color: transparent; display: inline-block;width: 0; height: 0; 
+    border-width:@w;border-top-color:@c;
+}
+.triangle(bottom,@w,@c){
+    border-style: solid;border-color: transparent; display: inline-block;width: 0; height: 0; 
+    border-width:@w;border-bottom-color:@c;
+}
+.triangle(left,@w,@c){
+    border-style: solid;border-color: transparent; display: inline-block;width: 0; height: 0; 
+    border-width:@w;border-left-color:@c;
+}
+.triangle(right,@w,@c){
+    border-style: solid;border-color: transparent; display: inline-block;width: 0; height: 0; 
+    border-width:@w;border-right-color:@c;
+}
+/*圆形*/
+.circle(@s){
+    width: @s; height: @s; border-radius: 50%;
+}
+/*绝对定位*/
+.position(@p,@w:100%,@h:100%,@t:0,@r:0,@b:0,@l:0){
+    position: @p; top:@t; right: @r; bottom: @b; left: @l; width: @w; height: @h;
+}
+.position_center(@p,@w,@h){
+    position: @p; width:@w; height:@h; left: 50%; top:50%; margin-top: -@h/2; margin-left: -@w/2;
+}
+/*边框*/
+
+.border(all,@c:@borderColor,@s:solid){
+    border: 1px @s @c;
+}
+.border(top,@c:@borderColor,@s:solid){
+    border-top: 1px @s @c;
+}
+.border(bottom,@c:@borderColor,@s:solid){
+    border-bottom: 1px @s @c;
+}
+.border(left,@c:@borderColor,@s:solid){
+    border-left: 1px @s @c;
+}
+.border(right,@c:@borderColor,@s:solid){
+    border-right: 1px @s @c;
+}
+
+/*图标*/
+.icon(@img,@w,@h,@l:0,@r:0){
+    background: url("@{url}/@{img}") no-repeat center; width:@w; height: @h; display: inline-block; vertical-align: sub; margin-right:@r; margin-left: @l;
+}
+
+/*按钮*/
+.button(@w,@h,@bg,@col){
+    .size(@w,@h); background:@bg; color: @col; cursor: pointer;
+}

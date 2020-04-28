@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常用模块</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/module.css"/>
+<link rel="stylesheet" href="../css/demo.css"/>
+</head>
+
+<body class="page_padding">
+   <h2 class="page_title">CSS规范（建议参考）</h2>
+
+   <h3 class="page_title_sub">文件结构</h3>
+   <table class="page_table">
+    <thead>
+        <th width="200">文件名</th><th>描述</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>base.css</td>
+            <td>清除浏览器默认样式和设置全局样式</td>
+        </tr>
+        <tr>
+            <td>layout.css</td>
+            <td>布局样式，包括头部，底部，导航，侧边栏，菜单等</td>
+        </tr>
+        <tr>
+            <td>module.css</td>
+            <td>通用模块和组件样式</td>
+        </tr>
+        <tr>
+            <td>index.css</td>
+            <td>首页样式（首页内容较多，建议单独放一个文件）</td>
+        </tr>
+        <tr>
+            <td>main.css</td>
+            <td>其他页面样式（根据需要可以更细地划分）</td>
+        </tr>
+        <tr>
+            <td>mobile.css</td>
+            <td>响应式移动端样式</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3 class="page_title_sub">class命名</h3>
+<div class="demo_block">
+    <div class="demo_block_view">
+       <div class="demo_msg">
+           <h4>常见模块的约定俗成的类名</h4>
+           <p>头：header，尾：footer，导航：nav，子导航：subnav，主体：main，内容：container/content，侧栏：sidebar，菜单：menu，子菜单：submenu，搜索：search，登录：login，注册：regsiter，热点：hot，标签：tags/tips，信息：msg，栏目：column，状态：status，下载：download，版权：copyright，服务：service，摘要：summary，友情链接：friendlink，广告：banner</p>
+       </div>
+    </div>
+</div>
+<div class="demo_block" style="border-top: 0;">
+    <div class="demo_block_view">
+       <div class="demo_msg">
+           <h4>组件和模块命名参考BEM规范，模式为B_E_M</h4>
+           <p>B：block 块，代表最高级别的抽象组件</p>
+           <p>E：element 元素，代表block的后代</p>
+           <p>M：modifier 修饰符，代表block的不同版本或状态</p>
+           <p>例如：.user , .user_list , .user_list_frist</p>
+           <p>尽量使用表明模块业务的语义化，甚至可以用整个页面为最大模块单元，如login_xx，search_xx等命名空间。</p>
+       </div>
+    </div>
+</div>
+<div class="demo_block" style="border-top: 0;">
+    <div class="demo_block_view">
+       <div class="demo_msg">
+           <h4>业务功能的class使用命名空间前缀来分类</h4>
+           <p>对象类：.o_xx</p>
+           <p> 主题类：.t_xx</p>
+           <p>状态类：.is_xx , .has_xx</p>
+           <p>工具类 : .u_xx</p>
+           <p>用于javascript勾子：.js_xx</p>
+       </div>
+    </div>
+</div>
+
+<h3 class="page_title_sub">代码组织</h3>
+<div class="demo_block">
+    <div class="demo_block_view">
+       <div class="demo_msg">
+           <p>- 尽量避免使用id选择器。</p>
+           <p>- 减少子选择器的层级，最多三级。</p>
+           <div>- 使用原子类class不超过3个：原子类指单一属性的class，如<xmp style="display: inline-block;"><div class='mar10 font16 pt8 link red'></div></xmp>，不利于维护。</div>
+           <p>- 推荐属性书写顺序，按类型分组排列：影响布局的放在前面，float，margin，padding，height，width等。不影响布局的放在后面，background，color，font等。</p>
+       </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/module.js"></script>
+<script src="../js/demo.js"></script>
+</html>

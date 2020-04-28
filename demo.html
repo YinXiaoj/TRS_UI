@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>demo</title>
+<link rel="stylesheet" href="css/base.css"/>
+<link rel="stylesheet" href="css/module.css"/>
+<link rel="stylesheet" href="css/demo.css"/>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+    $(function(){
+        $(".demoIframe").height($(window).height());
+        $(".iframe_item").each(function(){
+            $(this).click(function(){
+                $(".sidebar_sub dd").removeClass("is-active");
+                $(this).parent().addClass("is-active");
+                $(".demoIframe").attr("src",$(this).attr("href"));
+                return false;
+            })
+        })
+    })
+</script>
+</head>
+
+<body style="overflow: hidden;">
+
+<ul class="sidebar_fixed">
+    <li>
+        <h4>使用指南</h4>
+        <dl class="sidebar_sub">
+            <dd class="is-active"><a href="module/快速使用.html" class="iframe_item">快速使用</a></dd>
+            <dd><a href="module/CSS规范.html" class="iframe_item">CSS规范</a></dd>
+            <dd><a href="module/计划.html" class="iframe_item">计划</a></dd>
+        </dl>
+    </li>
+   <li>
+       <h4>组件</h4>
+       <dl class="sidebar_sub">
+           <dd ><a href="module/文字.html" class="iframe_item">文字</a></dd>
+           <dd><a href="module/图片.html" class="iframe_item">图片</a></dd>
+           <dd><a href="module/Tab选项卡.html" class="iframe_item">Tab选项卡</a></dd>
+           <dd><a href="module/轮播SuperSlide.html" class="iframe_item">轮播</a></dd>
+           <dd><a href="module/模块.html" class="iframe_item">常用模块</a></dd>
+           <dd><a href="module/select选择框.html" class="iframe_item">select选择框</a></dd>
+           <dd><a href="module/表单元素.html" class="iframe_item">表单元素</a></dd>
+       </dl>
+   </li>
+   <li>
+    <h4>页面框架</h4>
+    <dl class="sidebar_sub">
+        <dd><a href="pages/首页.html" target="_blank">首页</a></dd>
+        <dd><a href="pages/细览.html" target="_blank">细览</a></dd>
+        <dd><a href="pages/概览-文字.html" target="_blank">概览-文字</a></dd>
+        <dd><a href="pages/概览-图片.html" target="_blank">概览-图片</a></dd>
+        <dd><a href="pages/概览-图文.html" target="_blank">概览-图文</a></dd>
+    </dl>
+</li>
+</ul>
+
+<div class="container_fixed">
+    <div class="container_body">
+      <iframe src="module/快速使用.html" class="demoIframe"></iframe>
+    </div>
+</div>
+
+</body>
+
+</html>

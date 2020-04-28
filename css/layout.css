@@ -1,0 +1,20 @@
+/*头部底部*/
+.top{height: 40px; line-height: 40px; background: #eee;}
+.top_link a{margin:0 10px; color:#7c7c7c;}
+.top_link{color:#cdcdcd}
+.header{height: 150px;}
+.navBox{background: #ccc;}
+.nav{overflow: hidden;}
+.nav li{height: 50px; line-height: 50px; font-size: 16px; float: left; padding: 0 52px;}
+.nav li a{color: #fff;}
+.nav li.is-active,.nav li:hover{background: #999;}
+
+.footer{ padding: 30px 0;}
+.footer p{text-align: center;}
+
+.main{padding: 40px 0;}
+.sidebar{width: 200px; float: left; margin-right: 30px;}
+.container{overflow: hidden;}
+.sidebar_title{height: 60px; text-align: center; font-size: 24px; line-height: 60px; color: #fff; background: #999;}
+.menu li{height: 50px; line-height:50px; background: #f3f4fa; border-bottom:1px solid #ccc;text-align: center;}
+.menu li.is-active a{color: #3d55a7; font-weight: bold;}

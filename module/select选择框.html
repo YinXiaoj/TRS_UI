@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>常用模块</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/module.css"/>
+<link rel="stylesheet" href="../css/demo.css"/>
+
+</head>
+
+<body class="page_padding">
+    <h2 class="page_title">select选择框</h2>
+
+    <h3 class="page_title_sub">基础单选</h3>
+    <div class="demo_block">
+        <div class="demo_block_view">
+            <div class="select_box">
+              <select class="select js_select" onchange="alert($(this).val())">
+                <option value="0" selected>请选择</option>
+                <option value="1">选项1</option>
+                <option value="2">选项2</option>
+                <option value="3">选项3</option>
+              </select>
+            </div>
+        </div>
+        <div class="demo_block_code">
+            <xmp>
+    <div class="select_box">
+        <select class="select js_select" onchange="alert($(this).val())">
+            <option value="0">请选择</option>
+            <option value="1" selected>选项1</option>
+            <option value="2">选项2</option>
+            <option value="3">选项3</option>
+        </select>
+    </div>
+            </xmp>
+        </div>
+        <div class="demo_block_bottom"><i class="icon_down"></i><span>显示代码</span></div>
+    </div>
+
+    <h3 class="page_title_sub">省市区三级联动</h3>
+    <div class="demo_block">
+        <div class="demo_block_view">
+            <div class="select_box">
+                <select class="select js_select" id="province">
+                  <option value="0">请选择</option>
+                </select>
+            </div>
+            <div class="select_box">
+                <select class="select js_select" id="city">
+                  <option value="0">请选择</option>
+                </select>
+            </div>
+            <div class="select_box">
+                <select class="select js_select" id="town">
+                  <option value="0">请选择</option>
+                </select>
+            </div>
+        </div>
+        <div class="demo_block_code">
+            <xmp>       
+    <div class="select_box">
+        <select class="select js_select" id="province">
+            <option value="0">请选择</option>
+        </select>
+    </div>
+    <div class="select_box">
+        <select class="select js_select" id="city">
+            <option value="0">请选择</option>
+        </select>
+    </div>
+    <div class="select_box">
+        <select class="select js_select" id="town">
+            <option value="0">请选择</option>
+        </select>
+    </div>
+    <!-- 除jquery.js和module.js以外，还需添加select_area.js -->
+    <script src="../js/select_area.js"></script>
+            </xmp>
+        </div>
+        <div class="demo_block_bottom"><i class="icon_down"></i><span>显示代码</span></div>
+    </div>
+
+
+</body>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/demo.js"></script>
+<script src="../js/module.js"></script>
+<script src="../js/select_area.js"></script>
+</html>

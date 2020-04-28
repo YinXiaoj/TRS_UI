@@ -1,0 +1,33 @@
+.sidebar_fixed{width: 200px; padding: 20px; position: fixed; top: 0; height: 100%;}
+.sidebar_fixed li{margin-bottom: 10px;}
+.sidebar_fixed h4{ font-size: 16px; margin-bottom: 6px; font-weight: bold; line-height: 40px;}
+.sidebar_sub dd{font-size: 14px; line-height: 40px;}
+.sidebar_sub .is-active a{color: #409eff; font-weight: bold;}
+.container_fixed{overflow: hidden;border-left: 1px solid #dcdfe6; position: fixed; top:0; right: 0; height:100%; left: 240px;width:auto; overflow-y: auto;}
+.demoIframe{height: 100%;width:100%;  position: absolute; top:0; left: 0; right: 0; bottom: 0;}
+.container_body{position: absolute; top:0; left: 0; right: 0; bottom: 0; display: block;}
+.sidebar_fixed a:hover{color: #409eff;}
+.page_padding{padding: 20px 40px;}
+.page_title{ font-size: 28px; color: #1f2f3d;}
+.page_title_sub{margin: 55px 0 20px; font-size: 22px; color: #1f2f3d;}
+.demo_block{border: 1px solid #ebebeb; border-radius:4px;}
+.demo_block_view{padding: 20px;}
+.demo_block_code{border-top:1px solid #eaeefb;background-color:#fafafa; display: none;}
+.demo_block_code textarea{width: 100%; height: 200px;}
+xmp{margin: 0;}
+.icon_down{ border-style: dashed;border-color: transparent; display: inline-block;border-width: 6px;border-top-color: #c2c2c2;border-top-style: solid; width: 0; height: 0; line-height: 40px;}
+.icon_up{ border-style: dashed;border-color: transparent; display: inline-block;border-width: 6px;border-bottom-color: #c2c2c2;border-top-style: solid; width: 0; height: 0; line-height: 40px;}
+.demo_block_bottom{border-top:1px solid #eaeefb; height: 44px; line-height: 44px; text-align: center; cursor: pointer; background: #f9f9f9;}
+.demo_block_bottom .icon_down{vertical-align: text-bottom; margin-right: 8px;}
+.demo_block_bottom .icon_up{vertical-align: text-top; margin-right: 8px;}
+.demo_block_bottom.demo_block_active{background: #fff;}
+.page_table{width: 100%; font-size: 14px;}
+.page_table th,.page_table td{ height: 50px; line-height:50px; border-bottom:1px solid #eaeefb; text-align: left; padding: 0 20px;}
+.demo_imgbox li{margin: 0 20px; text-align: center; display: inline-block; vertical-align: top;}
+.demo_imgbox li img{width: 100px; height: 100px;}
+.demo_imgbox li p{ margin-top: 20px;}
+.demo_inner li{margin: 0 20px 0;display: inline-block; vertical-align: top;}
+.demo_msg *{ line-height:30px; font-size: 14px;}
+.demo_msg h4{font-size: 20px; margin-bottom: 10px;}
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页框架</title>
+<link rel="stylesheet" href="../css/base.css"/>
+<link rel="stylesheet" href="../css/module.css"/>
+<link rel="stylesheet" href="../css/layout.css"/>
+<link rel="stylesheet" href="../css/main.css"/>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.SuperSlide.2.1.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="top">
+    <div class="boxcenter">
+        <p class="fl">2019年10月30日 星期三</p>
+        <div class="fr top_link">
+            <a href="#">登录</a>|<a href="#">邮箱</a>|<a href="#">联系我们</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="boxcenter">
+        <div class="logo fl" style="font-size: 40px; margin-top: 50px;">LOGO</div>
+        <div class="trs_search fr" style="margin-top: 52px;"><input class="trs_search_ipt" type="text" placeholder="关键字"/><input class="trs_search_btn" type="button"/></div>
+    </div>
+</div>
+<div class="navBox">
+    <ul class="boxcenter nav clearfix">
+       <li class="is-active"><a href="#">首页</a></li>
+       <li><a href="#">栏目一</a></li>
+       <li><a href="#">栏目二</a></li>
+       <li><a href="#">栏目三</a></li>
+       <li><a href="#">栏目四</a></li>
+       <li><a href="#">栏目五</a></li>
+       <li><a href="#">栏目六</a></li>
+       <li><a href="#">栏目七</a></li>
+    </ul>
+</div>
+<!--./头部-->
+
+<!--main-->
+<div class="boxcenter main">
+    <!--大轮播-->
+    <div id="slideBox1" class="slideBox slideBox_big">
+        <div class="hd">
+            <ul><li></li><li></li><li></li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>大轮播图</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>大轮播图</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>大轮播图</p></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+    <script type="text/javascript">
+    jQuery("#slideBox1").slide({mainCell:".bd ul",autoPlay:true});
+    </script>
+    <!--./大轮播-->
+
+    <!--row-->
+    <div class="row clearfix marTop40">
+        <!--小轮播-->
+    <div id="slideBox2" class="slideBox slideBox_small fl">
+        <div class="hd">
+            <ul><li></li><li></li><li></li></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>小轮播图</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>小轮播图</p></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <img src="../images/img.jpg" />
+                       <div class="slideTxt"><p>小轮播图</p></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+    <script type="text/javascript">
+    jQuery("#slideBox2").slide({mainCell:".bd ul",autoPlay:true});
+    </script>
+    <!--./小轮播-->
+
+        <div class="newsBox fr">
+            <div class="column">
+                <h4>栏目</h4>
+                <a href="#">更多</a>
+            </div>
+            <ul class="trs_list marTop10">
+                <li><span>2020-04-01</span><a href="#">这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+                <li><span>2020-04-01</span><a href="#">这是一个标题</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--./row-->
+
+    <!--row-->
+    <div class="row bg_hui marTop40" style="height:300px;">通栏</div>
+    <!--./row-->
+
+    <!--row-->
+    <div class="row clearfix marTop40">
+        <!--mLeft-->
+        <div class="mLeft bg_hui" style="height: 300px;">
+            两栏-左
+        </div>
+        <!--./mLeft-->
+
+        <!--mRight-->
+        <div class="mRight bg_hui" style="height: 300px;">
+            两栏-右
+        </div>
+        <!--./mRight-->
+    </div>
+    <!--./row-->
+
+</div>
+<!--./main-->
+
+<!--row-->
+<div class="row bg_hui" style="height:300px; margin-top: 0;">
+    <div class="boxcenter container">大通栏</div>
+</div>
+<!--./row-->
+
+<!--main-->
+<div class="boxcenter container main">
+    <!--row-->
+    <div class="row clearfix">
+        <!--mLeft-->
+        <div class="mLeft_3 bg_hui" style="height: 300px;">
+            三栏-左
+        </div>
+        <!--./mLeft-->
+
+        <!--mLeft-->
+        <div class="mCenter_3 bg_hui" style="height: 300px;">
+            三栏-中
+        </div>
+        <!--./mLeft-->
+
+        <!--mRight-->
+        <div class="mRight_3 bg_hui" style="height: 300px;">
+            三栏-右
+        </div>
+        <!--./mRight-->
+    </div>
+    <!--./row-->
+</div>
+<!--./main-->
+
+<!--foot-->
+<div class="footer bg_hui">
+    <div class="boxcenter">
+       <p>底部</p>
+    </div>
+</div>
+<!--./foot-->
+
+</body>
+
+</html>

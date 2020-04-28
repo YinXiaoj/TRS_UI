@@ -1,0 +1,31 @@
+/*首页*/
+.slideBox_big{width: 1200px; height: 450px;}
+.slideBox_big .bd li{height:450px; }
+.newsBox{width: 580px;}
+.column{border-bottom: 2px solid #ddd; height: 40px; line-height: 40px;}
+.column h4{float: left; font-size: 22px; border-bottom: 2px solid #3d55a7; padding: 0 10px;}
+.column a{font-size: 16px; float: right;}
+.mLeft{width: 780px; float: left;}
+.mRight{width: 380px; float: right;}
+.mLeft_3{width: 370px; float: left; margin-right: 50px;}
+.mCenter_3{width: 370px; float: left;}
+.mRight_3{width: 370px; float: right;}
+/*概览*/
+
+/*细览*/
+.xl_title{font-size:24px; width:930px; margin:26px auto 20px; line-height:40px; color:#3d55a7; text-align:center}
+.xl_title_sub{text-align:center; font-size:20px; font-weight:normal;color: #3d55a7;}
+.xl_title2{border-bottom:2px solid #e9e9e9; padding:10px 0; color:#999; font-size:14px; overflow:hidden; line-height:34px; margin-bottom:20px}
+.xl_title2 span{margin-right:24px}
+.xl_title2 span font{cursor: pointer;}
+.xl_title2 span font.now{color:#3d55a7}
+.xl_title2 img{vertical-align:middle}
+.xl_content *{font-size:16px !important; line-height:32px !important; margin-bottom:26px !important;font-family:微软雅黑 !important}
+.xl_content .xl_img_t{font-size:14px; text-align:center}
+.xl_content a{color:#2966ca !important}
+.xl_content img{max-width:600px; height: auto !important;}
+.xl_box_t{font-size:16px; font-weight:bold;}
+.xl_flie_list{margin: 10px 0;}
+.xl_flie_list li{ font-size: 14px; line-height: 30px;}
+.xl_list2 li a,.xl_list3 li a{ font-size: 14px; line-height: 30px;}
+.xl_list2{margin: 20px 0;}
